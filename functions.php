@@ -87,4 +87,15 @@ function register_my_menu() {
         );
       }
       add_action( 'init', 'register_my_menus' );
+
+// Filters
+
+function search_filter($query){
+        if($query -> is_search()){
+                $query->set('post-type', array('post', 'project'));
+        }
+}
+
+add_filter('pre_get_posts', 'search_filter');
 ?>
+
