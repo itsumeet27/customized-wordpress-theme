@@ -107,11 +107,62 @@ function register_my_menu() {
 
 function search_filter($query){
         if($query -> is_search()){
-                $query->set('post-type', array('post', 'project'));
+                $query->set('post-type', array('post', 'projects'));
         }
 }
 
 add_filter('pre_get_posts', 'search_filter');
+
+function footer_widgets_init() {
+ 
+        // First footer widget area, located in the footer. Empty by default.
+        register_sidebar( array(
+            'name' => __( 'First Footer Widget Area', 'customfooter' ),
+            'id' => 'first-footer-widget-area',
+            'description' => __( 'The first footer widget area', 'customfooter' ),
+            'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ) );
+     
+        // Second Footer Widget Area, located in the footer. Empty by default.
+        register_sidebar( array(
+            'name' => __( 'Second Footer Widget Area', 'customfooter' ),
+            'id' => 'second-footer-widget-area',
+            'description' => __( 'The second footer widget area', 'customfooter' ),
+            'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ) );
+     
+        // Third Footer Widget Area, located in the footer. Empty by default.
+        register_sidebar( array(
+            'name' => __( 'Third Footer Widget Area', 'customfooter' ),
+            'id' => 'third-footer-widget-area',
+            'description' => __( 'The third footer widget area', 'customfooter' ),
+            'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ) );
+     
+        // Fourth Footer Widget Area, located in the footer. Empty by default.
+        register_sidebar( array(
+            'name' => __( 'Fourth Footer Widget Area', 'customfooter' ),
+            'id' => 'fourth-footer-widget-area',
+            'description' => __( 'The fourth footer widget area', 'customfooter' ),
+            'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ) );
+             
+    }
+     
+    // Register sidebars by running tutsplus_widgets_init() on the widgets_init hook.
+    add_action( 'widgets_init', 'footer_widgets_init' );
 
 ?>
 

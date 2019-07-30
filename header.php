@@ -46,23 +46,63 @@
 
       body::-webkit-scrollbar {
         width: 12px;
-	background-color: #f5f5f5;
+	      background-color: #f5f5f5;
       }
 
       body::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #f5f5f5;
+        border-radius: 10px;
+        background-color: #f5f5f5;
       }
 
       body::-webkit-scrollbar-thumb {
         border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #114A7C;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #114A7C;
       }
 
+      footer{
+        width: 100%;
+      }
 
+      aside{
+        width: 100%;
+        padding-top: 2em; 
+      }
 
+      aside.row{
+        margin: 0;
+      }
+
+      .first, .second, .third{
+        border: 1px solid #fff;
+        border-left:none;
+        border-top:none;
+        border-bottom:none;
+      }
+
+      aside h3{
+        padding-bottom: 0.75em;
+      }
+
+      aside ul li{
+        list-style-type: none;
+        padding: 0.3em;
+        font-size: 16px;
+      }
+
+      @media only screen and (max-width:768px){
+        .first, .second, .third{
+          border: 1px solid #fff;
+          border-left:none;
+          border-top:none;
+          border-right:none;
+          padding-top: 1.5em;
+        }
+        .fourth{
+          padding-top: 1.5em;
+        }
+      }
       
     </style>
 </head>
