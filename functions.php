@@ -5,6 +5,7 @@ require_once('inc/template-tags.inc.php');
 /**
  * Include CSS files
  */
+
 function theme_enqueue_scripts() {
         wp_enqueue_style( 'Font_Awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' );
         wp_enqueue_style( 'Bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
@@ -113,6 +114,8 @@ function search_filter($query){
 
 add_filter('pre_get_posts', 'search_filter');
 
+// Footer widgets
+
 function footer_widgets_init() {
  
         // First footer widget area, located in the footer. Empty by default.
@@ -164,5 +167,31 @@ function footer_widgets_init() {
     // Register sidebars by running tutsplus_widgets_init() on the widgets_init hook.
     add_action( 'widgets_init', 'footer_widgets_init' );
 
+// Custom Background
+
+$defaults = array(
+        'default-image'          => '',
+        'default-preset'         => 'fit', // 'default', 'fill', 'fit', 'repeat', 'custom'
+        'default-position-x'     => 'center',    // 'left', 'center', 'right'
+        'default-position-y'     => 'center',     // 'top', 'center', 'bottom'
+        'default-size'           => 'cover',    // 'auto', 'contain', 'cover'
+        'default-repeat'         => 'no-repeat',  // 'repeat-x', 'repeat-y', 'repeat', 'no-repeat'
+        'default-attachment'     => 'scroll',  // 'scroll', 'fixed'
+        'default-color'          => '',
+        'wp-head-callback'       => '_custom_background_cb',
+        'admin-head-callback'    => '',
+        'admin-preview-callback' => '',
+);
+add_theme_support( 'custom-background', $defaults );
+
+// Custom Headers
+
+$args = array(
+	'width'         => 980,
+	'height'        => 60,
+	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+	'uploads'       => true,
+);
+add_theme_support( 'custom-header', $args );
 ?>
 
