@@ -187,11 +187,24 @@ add_theme_support( 'custom-background', $defaults );
 // Custom Headers
 
 $args = array(
-	'width'         => 980,
-	'height'        => 60,
-	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+        'flex-width'  => true,
+        'width'         => 1200,        
+        'flex-height' => true,
+	'height'        => 400,
+	'default-image' => get_template_directory_uri() . '/img/6169.jpg',
 	'uploads'       => true,
 );
 add_theme_support( 'custom-header', $args );
+
+//Custom Logo
+
+add_theme_support( 'custom-logo', array(
+        'height'      => 200,
+        'width'       => 200,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+        'uploads'     => true
+    ) );
 ?>
 

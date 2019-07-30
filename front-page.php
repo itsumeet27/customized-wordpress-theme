@@ -6,33 +6,13 @@
 <!-- Intro -->
 <section class="view">
 
-<div class="row">
-
-  <div class="col-md-6">
-
-    <div class="d-flex flex-column justify-content-center align-items-center h-100">
-      <h1 class="heading display-3">Customized WordPress Development</h1>
-      <h4 class="subheading font-weight-bold"> -by Sumeet Sharma</h4>
-      <div class="mr-auto">
-        <button type="button" class="btn btn-lily btn-margin btn-rounded">Get started <i class="fas fa-caret-right ml-3"></i></button>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="col-md-6">
-
-    <div class="view">
-      <img src="https://images.pexels.com/photos/325045/pexels-photo-325045.jpeg" class="img-fluid" alt="smaple image">
-      <div class="mask flex-center hm-gradient">
-      </div>
-    </div>
-
-  </div>
-
+<div class="" style="width:100%">
+<img src="<?php if(is_front_page()){
+        header_image();
+    }?>" style="width:100%" />
 </div>
 
-<h2 class="text-center" style="text-transform: uppercase"><b>Our Blogs</b></h2>
+<h2 class="text-center p-2" style="text-transform: uppercase;margin-top:2em"><b>Our Blogs</b></h2>
 <hr class="" style="border-width: 2px; width: 50px; border-style: groove; border-color: #ccc; border-radius: 50px; margin-bottom:2em">
 <div class="row p-3">
         <?php
