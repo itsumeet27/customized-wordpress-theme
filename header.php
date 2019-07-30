@@ -45,17 +45,23 @@
       }
 
       body::-webkit-scrollbar {
-        width: 1em;
+        width: 12px;
+	background-color: #f5f5f5;
       }
 
       body::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #f5f5f5;
       }
 
       body::-webkit-scrollbar-thumb {
-        background-color: darkgrey;
-        outline: 1px solid slategrey;
+        border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #114A7C;
       }
+
+
 
       
     </style>

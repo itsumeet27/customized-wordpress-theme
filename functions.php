@@ -41,19 +41,34 @@ function mdb_projects(){
                         'labels' => array(
                                 'name' => 'Projects',
                                 'singular_name' => 'Project',
+                                'menu_name' => 'Projects',
+                                'all_items' => 'All Projects',
                                 'add_new_item' => 'Add New Project',
-                                'edit_item' => 'Edit Project',                                
+                                'view_item' => 'View Project',
+                                'edit_item' => 'Edit Project',
+                                'search_item' => 'Search Project',
+                                'not_found' => 'Not Found',
+                                'not_found_in_trash' => 'Not found in trash'
                         ),
+                        'description' => 'Add portfolio/projects you have worked on!',
                         'menu-icon' => 'dashicons-portfolio',
+                        'show_ui' => true,
+                        'sjow_in_menu' => true,
+                        'can_export' => true,
+                        'show_in_menu' => true,
+                        'show_in_nav_menus' => true,
+                        'exclude_from_search' => false,
                         'public' => true,
                         'has-archive' => true,
                         'supports' => array(
-                                'title','thumbnail','editor','excerpt','comments'
-                        )
+                                'title','editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields'
+                        ),
+                        'taxonomies' => array('category','tag')
+                        
                 )
         );
 }
-add_action('init', 'mdb_projects');
+add_action('init', 'mdb_projects', 0);
 
 // Widgets
 
