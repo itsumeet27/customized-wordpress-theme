@@ -31,44 +31,52 @@
 
     </div>
 
-    <div class="col-md-8 mb-4">
-        <!-- Breadcrumbs -->
-            <?php
-                $categories = get_the_category();
-                $first_category_name = $categories[0]->cat_name;
-                $first_category_id = get_cat_ID( $category[0]->cat_name );
-                $first_category_link = get_category_link( $category_id );
-            ?>
-            <ol class="breadcrumb white z-depth-1">
-                <li class="breadcrumb-item">
-                    <a href="<?php echo get_home_url(); ?>">Home Page</a>
-                </li>
+    <div class="row">
+        <div class="col-md-8 mb-4">
+            <!-- Breadcrumbs -->
                 <?php
-                if (count($categories)){
-                    ?>
+                    $categories = get_the_category();
+                    $first_category_name = $categories[0]->cat_name;
+                    $first_category_id = get_cat_ID( $category[0]->cat_name );
+                    $first_category_link = get_category_link( $category_id );
+                ?>
+                <ol class="breadcrumb white z-depth-1">
                     <li class="breadcrumb-item">
-                        <a href="<?php echo $first_category_link ?>"><?php echo $first_category_name ?></a>
+                        <a href="<?php echo get_home_url(); ?>">Home Page</a>
                     </li>
                     <?php
-                }
-                ?>
-                <li class="breadcrumb-item active"><?php the_title() ?></li>
-            </ol>
-        <!-- Breadcrumbs -->
-        <div class="post-content text-justify">
+                    if (count($categories)){
+                        ?>
+                        <li class="breadcrumb-item">
+                            <a href="<?php echo $first_category_link ?>"><?php echo $first_category_name ?></a>
+                        </li>
+                        <?php
+                    }
+                    ?>
+                    <li class="breadcrumb-item active"><?php the_title() ?></li>
+                </ol>
+            <!-- Breadcrumbs -->
+            <div class="post-content text-justify">
+                
+                <?php the_content(); ?>
+                
+            </div>
             
-            <?php the_content(); ?>
-            
+            <!--Comments and reply-->
+            <div class="comments-section">
+                <?php comments_template(); ?>
+            </div>
+
+            <!--/.Comments and reply--> 
+        </div> 
+        <div class="col-md-4 mb-4">
+            <!--Sidebar-->
+            <?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
+                <?php dynamic_sidebar( 'sidebar' ); ?>
+            <?php endif; ?>
+            <!--/.Sidebar-->
         </div>
-        <!--Comments and reply-->
-        <?php comments_template(); ?>
-        <!--/.Comments and reply--> 
-    </div> 
-    <!--Sidebar-->
-    <?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
-        <?php dynamic_sidebar( 'sidebar' ); ?>
-    <?php endif; ?>
-    <!--/.Sidebar-->
+    </div>
     </section>
     <?php   
     }
