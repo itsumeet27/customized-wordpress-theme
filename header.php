@@ -118,8 +118,12 @@
 <div class="site-header">
 <!--Navbar -->
 <nav class="mb-1 navbar navbar-expand-lg navbar-dark black fixed-top z-depth-0 scrolling-navbar">
-    <a class="navbar-brand" href="#">
-        <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="mdb logo">
+    <a class="" href="#">
+    <?php 
+      $custom_logo_id = get_theme_mod( 'custom_logo' );
+      $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+    ?>
+        <img src="<?php echo $image[0]; ?>" alt="<?php the_title(); ?>" height="75">
     </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
     aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
