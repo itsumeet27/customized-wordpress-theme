@@ -46,7 +46,8 @@
 
       body::-webkit-scrollbar {
         width: 12px;
-	      background-color: #f5f5f5;
+        background-color: #f5f5f5;
+        
       }
 
       body::-webkit-scrollbar-track {
@@ -81,6 +82,11 @@
         border-bottom:none;
       }
 
+      aside ul{
+        margin: 0;
+        padding: 0;
+      }
+
       aside h3{
         padding-bottom: 0.75em;
       }
@@ -98,9 +104,11 @@
           border-top:none;
           border-right:none;
           padding-top: 1.5em;
+          padding-bottom: 1.5em;
         }
         .fourth{
           padding-top: 1.5em;
+          padding-bottom: 1.5em;
         }
       }
       
