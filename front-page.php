@@ -6,7 +6,7 @@
 <!-- Intro -->
 <section class="view">
 
-<div class="" style="width:100%">
+<div class="header-image" style="width:100%">
 <img src="<?php if(is_front_page()){
         header_image();
     }?>" style="width:100%" />

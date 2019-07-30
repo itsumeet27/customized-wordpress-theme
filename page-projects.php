@@ -6,9 +6,15 @@
 
 <!-- Intro -->
 <section class="view">
-
-<h2 class="text-center" style="text-transform: uppercase;margin-top:2em"><b>Our Projects</b></h2>
-<hr class="" style="border-width: 2px; width: 50px; border-style: groove; border-color: #ccc; border-radius: 50px; margin-bottom:2em">
+<?php if(has_post_thumbnail()){ ?>
+    <div class="about">
+        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" style="width: 100%"/>
+        <div class="title">
+            <h2 class="text-center p-2" style="text-transform: uppercase;margin-top:2em"><b><?php the_title(); ?></b></h2>
+            <hr class="" style="border-width: 2px; width: 50px; border-style: groove; border-color: #ccc; border-radius: 50px; margin-bottom:2em">
+        </div>
+    </div>
+<?php } ?>
 <div class="row p-3">
         <?php
 
@@ -22,7 +28,7 @@
             while($projects -> have_posts()){
                 $projects -> the_post();
             ?>
-            <div class="col-md-6 mb-md-0 mb-4 text-center">
+            <div class="col-md-6 mb-4 text-center">
                 <!-- Featured Image -->
                 <div class="view overlay rounded z-depth-2 mb-4">
                     <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>">

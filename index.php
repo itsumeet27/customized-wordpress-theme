@@ -5,8 +5,12 @@
 <!-- Intro -->
 
 <section class="view">
-
-<h2 class="text-center" style="text-transform: uppercase;margin-top:2em"><b>Our Blogs</b></h2>
+<div class="header-image" style="width:100%">
+<img src="<?php if(!is_front_page()){
+        header_image();
+    }?>" style="width:100%" />
+</div>
+<h2 class="text-center" style="text-transform: uppercase;margin-top:2em"><b>Blogs</b></h2>
 <hr class="" style="border-width: 2px; width: 50px; border-style: groove; border-color: #ccc; border-radius: 50px; margin-bottom:2em">
 <div class="row p-3">
         <?php
