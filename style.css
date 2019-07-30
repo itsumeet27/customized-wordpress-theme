@@ -71,14 +71,12 @@ Author URI: https://netmatesolutions.in/itsumeet;
   }
   
   .site-header nav ul li a:hover{
-    background-color: #444;
     color: #fff;
     transition-duration: 0.2s;
   }
   
   .site-header nav ul li.current-menu-item a:link,
   .site-header nav ul li.current-menu-item a:visited{
-    background-color: #000;
     color: #fff;
   }
   

@@ -14,6 +14,7 @@
         margin-right: 5px;
         float: left;
         list-style-type:none;
+        font-weight:400;
       }
       
       .site-header nav ul li a:link,
@@ -22,19 +23,19 @@
         padding: 10px 18px;
         border-bottom: none;
         text-decoration: none;
-        color: #fff;
+        color: #444;
       }
       
       .site-header nav ul li a:hover{
-        color: #cecece;
+        color: #333;
         transition-duration: 0.2s;
         background: none;
       }
       
       .site-header nav ul li.current-menu-item a:link,
       .site-header nav ul li.current-menu-item a:visited{
-        color: #cecece;
-
+        color: #333;
+        background:none;
       }
       
       @media only screen and (max-width:991px) {
@@ -76,7 +77,7 @@
       }
 
       .first, .second, .third{
-        border: 1px solid #fff;
+        border: 1px solid #333;
         border-left:none;
         border-top:none;
         border-bottom:none;
@@ -85,6 +86,7 @@
       aside ul{
         margin: 0;
         padding: 0;
+        
       }
 
       aside h3{
@@ -97,9 +99,13 @@
         font-size: 16px;
       }
 
+      aside ul li a{
+        color: #333!important;
+      }
+
       @media only screen and (max-width:768px){
         .first, .second, .third{
-          border: 1px solid #fff;
+          border: 1px solid #333;
           border-left:none;
           border-top:none;
           border-right:none;
@@ -117,7 +123,7 @@
 <body>
 <div class="site-header">
 <!--Navbar -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark black fixed-top z-depth-0 scrolling-navbar">
+<nav class="mb-1 navbar navbar-expand-lg navbar-light white fixed-top z-depth-0 scrolling-navbar" style="background:">
     <a class="" href="#">
     <?php 
       $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -142,18 +148,17 @@
     <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item">
         <a class="nav-link waves-effect waves-light">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link waves-effect waves-light">
-          <i class="fab fa-google-plus-g"></i>
-        </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user"></i>
+          <i class="fab fa-linkedin"></i>
         </a>
       </li>
     </ul>

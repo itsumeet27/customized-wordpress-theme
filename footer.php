@@ -9,35 +9,35 @@
 		<div class="col-md-8 text-center pt-2 pb-2">
 			<!-- Social icons -->
 			<div class="">
-				<a href="https://www.facebook.com/mdbootstrap" target="_blank">
+				<a href="" target="_blank">
 					<i class="fab fa-facebook-f mr-3"></i>
 				</a>
 
-				<a href="https://twitter.com/MDBootstrap" target="_blank">
+				<a href="" target="_blank">
 					<i class="fab fa-twitter mr-3"></i>
 				</a>
 
-				<a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+				<a href="" target="_blank">
 					<i class="fab fa-youtube mr-3"></i>
 				</a>
 
-				<a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+				<a href="" target="_blank">
 					<i class="fab fa-google-plus-g mr-3"></i>
 				</a>
 
-				<a href="https://dribbble.com/mdbootstrap" target="_blank">
+				<a href="" target="_blank">
 					<i class="fab fa-dribbble mr-3"></i>
 				</a>
 
-				<a href="https://pinterest.com/mdbootstrap" target="_blank">
+				<a href="" target="_blank">
 					<i class="fab fa-pinterest mr-3"></i>
 				</a>
 
-				<a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+				<a href="" target="_blank">
 					<i class="fab fa-github mr-3"></i>
 				</a>
 
-				<a href="http://codepen.io/mdbootstrap/" target="_blank">
+				<a href="" target="_blank">
 					<i class="fab fa-codepen mr-3"></i>
 				</a>
 			</div>
@@ -65,7 +65,7 @@
     && is_active_sidebar( 'third-footer-widget-area'  )
     && is_active_sidebar( 'fourth-footer-widget-area' )
 ) : ?>
-<div class="pb-5">
+<div class="pb-5" style="background: #f9f9f9;color:#333">
 	<aside class="row" role="complementary">
 		<div class="first quarter widget-area col-md-3">
 			<?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
