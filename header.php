@@ -148,6 +148,68 @@
           color: #fff!important;
           background-color: #333!important;
       }  
+
+      /* Post content and Sidebar */
+
+      #sidebar{
+        background: #f9f9f9;
+        padding: 0.75em;
+        font-size: 24px;
+      }
+
+      #sidebar ul li{
+          list-style-type:none;
+          font-size: 18px;
+          padding: 0.3em;
+          line-height: 1.6em;
+      }
+
+      #sidebar ul li a{
+          color: #444;
+      }
+
+      #sidebar ul li a:hover{
+          text-decoration: underline;
+          color: #007bff;
+          transition-duration: 0.2s;
+      }
+
+      .search-form{
+          margin-top: 1em; 
+          margin-bottom: 1em;
+          
+      }
+
+      input[type='search']{
+          font-size: 16px;
+          border: 1px solid #000;
+          padding: 0.3em;
+          border-left: 0;
+          border-right: 0;
+          border-top: 0;
+          background: rgba(0,0,0,0.0);
+      }
+
+      .search-submit{
+          padding: 0.7rem 1.6rem;
+          font-size: 0.7rem;
+          background-color: #33b5e5;
+          color: #fff;
+          cursor: pointer;
+          border: none;
+          border-radius: .125rem;
+          font-size: 14px;
+          text-transform: uppercase;
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+          word-wrap: break-word;
+          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+          white-space: normal;
+          margin: 0.375rem;
+      }
+
+      .lead{
+          font-size: 1.1rem;
+      }
       
     </style>
 </head>
