@@ -23,7 +23,7 @@
                 </div>  
 
                 <!-- Post title -->
-                <a href='<?php the_permalink(); ?>'><h4 class="font-weight-bold black-text mb-3"><strong><?php the_title(); ?></strong></h4>
+                <a href='<?php the_permalink(); ?>'><h4 class="font-weight-bold black-text mb-3"><strong><?php the_title(); ?></strong></h4></a>
 
                 <!-- Post data -->
                 <p>by <a class="font-weight-bold"><?php the_author(); ?></a></p>     
