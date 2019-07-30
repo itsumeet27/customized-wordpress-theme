@@ -2,6 +2,8 @@
     get_header(); 
 ?>
 
+
+
 <!-- Intro -->
 <section class="view" style="margin-top: 6em;">
 <?php 

@@ -2,6 +2,7 @@
     get_header(); 
 ?>
 
+
 <!-- Intro -->
 <section class="view">
 

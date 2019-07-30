@@ -2,6 +2,8 @@
     get_header(); 
 ?>
 
+
+
 <style type="text/css">
     
   #sidebar{

@@ -3,6 +3,7 @@
 ?>
 
 <!-- Intro -->
+
 <section class="view">
 
 <h2 class="text-center" style="text-transform: uppercase;margin-top:2em"><b>Our Blogs</b></h2>
