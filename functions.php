@@ -187,12 +187,12 @@ add_theme_support( 'custom-background', $defaults );
 // Custom Headers
 
 $args = array(
-        'flex-width'  => true,
-        'width'         => 1200,        
-        'flex-height' => true,
-	'height'        => 400,
-	'default-image' => get_template_directory_uri() . '/img/6169.jpg',
-	'uploads'       => true,
+        'flex-width'    => true,
+        'width'         => 960,        
+        'flex-height'   => true,
+    	'height'        => 360,
+    	'default-image' => get_template_directory_uri() . '/img/header.png',
+    	'uploads'       => true,
 );
 add_theme_support( 'custom-header', $args );
 
