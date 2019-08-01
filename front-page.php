@@ -12,6 +12,17 @@
     }?>" style="width:100%" />
 </div>
 
+<?php
+    while(have_posts()){
+        the_post();
+
+?>
+<div class="p-3 text-justify">
+    <?php the_content(); ?>
+</div>
+
+<?php } ?>
+
 <h2 class="text-center p-2" style="text-transform: uppercase;margin-top:2em"><b>Our Blogs</b></h2>
 <hr class="" style="border-width: 2px; width: 50px; border-style: groove; border-color: #ccc; border-radius: 50px; margin-bottom:2em">
 <div class="row p-3">
