@@ -10,7 +10,7 @@
             header_image();
         }?>" style="width:100%" />
     </div>
-    <h2 class="text-center" style="text-transform: uppercase;margin-top:2em"><b>Blogs</b></h2>
+    <h2 class="text-center" style="text-transform: uppercase;margin-top:2em"><b><?php wp_title(''); ?></b></h2>
     <hr class="" style="border-width: 2px; width: 50px; border-style: groove; border-color: #ccc; border-radius: 50px; margin-bottom:2em">
     <div class="row p-3">
         <div class="col-md-9 row">
