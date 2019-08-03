@@ -108,6 +108,10 @@
         color: #333!important;
       }
 
+      
+      .white-text>a {
+        color: white;
+      }
       @media only screen and (max-width:768px){
         .first, .second, .third{
           border: 1px solid #333;
