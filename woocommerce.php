@@ -143,7 +143,7 @@ if ( !is_shop()) {
                         <!--Content-->
                         <h6 class="mb-3">
                             <a href="<?php echo esc_url( get_term_link( $product_cat_id, 'product_cat' ) ); ?>">
-                                <span class="badge purple mr-1"><?php echo $product_cat_name ?></span>
+                                <span class="badge purple mr-1"><?php echo $product_cat_name; ?></span>
                             </a>
                         </h6>
                         <h5 class="mb-3">
@@ -153,14 +153,14 @@ if ( !is_shop()) {
                             <?php if($sale_price) {
                             ?>
                             <span class="mr-1">
-                                <del><?php echo "$" . $regular_price; ?></del>
+                                <del><?php echo "₹ " . $regular_price; ?></del>
                             </span>
                             <?php
                             }
                             ?>
                             <span>
                         <?php
-                        echo "$";
+                        echo "₹ ";
                         echo  ($sale_price) ? $sale_price : $regular_price;
                         ?></span>
                         </p>
@@ -196,6 +196,7 @@ if ( !is_shop()) {
 
         </section>
         <!--Section: Products-->
+        <?php mdb_pagination(); ?>
 
     </div>
 </main>
