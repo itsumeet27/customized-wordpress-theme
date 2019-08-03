@@ -10,37 +10,45 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @package 	WooCommerce/Templates
+ * @see       https://docs.woocommerce.com/document/template-structure/
+ * @author    WooThemes
+ * @package   WooCommerce/Templates
  * @version     3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+  exit;
 }
 
 if ( $related_products ) : ?>
 
-	<section class="related products">
+  <section class="related products">
 
-		<h2><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h2>
+    <div class="row wow fadeIn">
+    <?php woocommerce_product_loop_start(0); ?>
 
-		<?php woocommerce_product_loop_start(); ?>
+      <?php $counter = 1; ?>
 
-			<?php foreach ( $related_products as $related_product ) : ?>
+        <?php foreach ( $related_products as $related_product ) : ?>
 
-				<?php
-				 	$post_object = get_post( $related_product->get_id() );
+          <?php
+            $post_object = get_post( $related_product->get_id() );
 
-					setup_postdata( $GLOBALS['post'] =& $post_object );
+            setup_postdata( $GLOBALS['post'] =& $post_object ); ?>
+            <?php wc_get_template_part( 'content', 'product-related' ); ?>
 
-					wc_get_template_part( 'content', 'product' ); ?>
+            <?php
+            if($counter==3) {
+              break;
+            }
+            $counter++;
+            ?>
 
-			<?php endforeach; ?>
+        <?php endforeach; ?>
 
-		<?php woocommerce_product_loop_end(); ?>
-
-	</section>
+    <?php woocommerce_product_loop_end(); ?>
+    </div>
+  </section>
 
 <?php endif;
 
