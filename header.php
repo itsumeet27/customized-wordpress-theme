@@ -81,13 +81,6 @@
         margin: 0;
       }
 
-      .first, .second, .third{
-        border: 1px solid #333;
-        border-left:none;
-        border-top:none;
-        border-bottom:none;
-      }
-
       aside ul{
         margin: 0;
         padding: 0;
@@ -114,10 +107,6 @@
       }
       @media only screen and (max-width:768px){
         .first, .second, .third{
-          border: 1px solid #333;
-          border-left:none;
-          border-top:none;
-          border-right:none;
           padding-top: 1.5em;
           padding-bottom: 1.5em;
         }
