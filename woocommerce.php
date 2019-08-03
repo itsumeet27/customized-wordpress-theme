@@ -199,8 +199,6 @@ if ( !is_shop()) {
         <?php mdb_pagination(); ?>
 
     </div>
-</main>
-<!--Main layout-->
 
 <?php
 } // end else (if single-product)
