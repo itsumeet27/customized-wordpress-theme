@@ -68,21 +68,7 @@ if ( !is_shop()) {
 
                     <!-- Links -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">All
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cat 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cat 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cat 3</a>
-                        </li>
-
+                        <?php wp_nav_menu(array('theme_location' => 'category')); ?>
                     </ul>
                     <!-- Links -->
 

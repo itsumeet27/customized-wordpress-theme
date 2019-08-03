@@ -1,7 +1,6 @@
 </main>
 <!--Footer-->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-	
 	<div class="row pt-3 pb-3" style="margin:0;background-color: #032b4e5e">
 		<div class="col-md-4 pt-2 pb-2">
 			<p class="lead" style="margin:0;text-transform: uppercase;">Let's get connected online</p>

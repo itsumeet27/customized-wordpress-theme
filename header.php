@@ -9,6 +9,28 @@
     <?php wp_head(); ?>
     <style type="text/css">
 
+      /* Product Category Menu */
+
+      #menu-product-categories{
+        list-style-type: none;
+      }
+
+      #menu-product-categories li{ 
+        margin-right: 5px;
+        float: left;
+        list-style-type:none;
+        font-weight:400;
+      }
+
+      #menu-product-categories li a:link, 
+      #menu-product-categories li a:visited{
+        display: block;
+        padding: 10px 18px;
+        border-bottom: none;
+        text-decoration: none;
+        color: #fff;
+      }
+
       /* Site Header Menu*/
   
       .site-header nav ul li{
@@ -41,7 +63,7 @@
       
       @media only screen and (max-width:991px) {
       
-        .site-header nav ul li{
+        .site-header nav ul li, #menu-product-categories li{
           float:none;
         }
       }
@@ -223,13 +245,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
     <ul class="navbar-nav mr-auto">
-      <?php
-        $args = array(
-            'theme-location' => 'primary'
-        );
-      ?>
-
-      <?php wp_nav_menu($args); ?>
+      <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
     </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item">

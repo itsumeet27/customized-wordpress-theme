@@ -30,6 +30,10 @@ function mdbtheme_setup() {
         add_theme_support('html5',
                 array('comment-list', 'comment-form', 'search-form')
         );
+        add_theme_support('menus');
+        register_nav_menu('primary', 'Primary Menu');
+        register_nav_menu('footer', 'Footer Menu');
+        register_nav_menu('category', 'Product Category Menu');
 }    
 add_action('after_setup_theme', 'mdbtheme_setup');    
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
@@ -86,24 +90,6 @@ function mdb_widgets_init() {
       
       }
       add_action( 'widgets_init', 'mdb_widgets_init' );
-
-// Navigation Menu
-
-function register_my_menu() {
-        register_nav_menu('primary-menu',__( 'Primary Menu' ));
-      }
-      add_action( 'init', 'register_my_menu' );
-      
-      function register_my_menus() {
-        register_nav_menus(
-          array(
-            'primary-menu' => __( 'Primary Menu' ),
-            'footer-menu' => __( 'Footer Menu' ),
-            'product-category' => __( 'Product Category Menu' ),
-          )
-        );
-      }
-      add_action( 'init', 'register_my_menus' );
 
 // Filters
 
