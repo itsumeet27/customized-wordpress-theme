@@ -19,6 +19,18 @@
         padding: 0.75em 1em;
       }
 
+      .woocommerce-Tabs-panel{
+        text-align: justify;
+        padding: 1.5em;
+        margin:0;
+      }
+
+      .woocommerce-Tabs-panel h2{
+        margin:0;
+        padding: 0.75em;
+        padding-left: 0;
+      }
+
       #hide-related section{
         display:none!important;
       }
