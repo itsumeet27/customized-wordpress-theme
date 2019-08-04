@@ -11,6 +11,14 @@
 
       /* Product Category Menu */
 
+      .qty{
+        border: 1px solid #333;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        padding: 0.75em
+      }
+
       #menu-product-categories{
         list-style-type: none;
       }

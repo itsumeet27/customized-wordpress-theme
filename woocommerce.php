@@ -71,13 +71,6 @@ if ( !is_shop()) {
                         <?php wp_nav_menu(array('theme_location' => 'category')); ?>
                     </ul>
                     <!-- Links -->
-
-                    <form class="form-inline">
-                        <div class="md-form mt-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                        </div>
-                        <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit"><i class="fas fa-search"></i></button>
-                    </form>
                 </div>
                 <!-- Collapsible content -->
 
