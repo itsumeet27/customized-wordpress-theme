@@ -9,6 +9,7 @@
     <?php wp_head(); ?>
     <style type="text/css">
 
+
       .woocommerce-tabs ul{
         list-style-type:none;
         
@@ -16,7 +17,32 @@
 
       .woocommerce-tabs ul li{
         float: left;
-        padding: 0.75em 1em;
+        margin-left: 0.5em;
+        padding: 0.5em 1em;
+        font-size: 18px;
+      }
+
+      .woocommerce-tabs ul li a{
+        text-decoration:none;
+        color: #114A7C;
+        font-weight: 400;
+      }
+
+      .woocommerce-tabs ul li:hover{
+        transition-duration: 0.05s;
+        border: 2px solid #555;
+        border-top:0;
+        border-left:0;
+        border-right:0;
+        cursor: pointer;
+      }
+
+      .woocommerce-tabs ul li.active{
+        
+        border: 2px solid #555;
+        border-top:0;
+        border-left:0;
+        border-right:0;
       }
 
       .woocommerce-Tabs-panel{
