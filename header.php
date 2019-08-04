@@ -14,6 +14,11 @@
         
       }
 
+      .woocommerce-tabs ul li{
+        float: left;
+        padding: 0.75em 1em;
+      }
+
       #hide-related section{
         display:none!important;
       }
