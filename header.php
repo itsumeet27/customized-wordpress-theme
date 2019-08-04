@@ -9,7 +9,10 @@
     <?php wp_head(); ?>
     <style type="text/css">
 
-      /* Product Category Menu */
+      .woocommerce-tabs ul{
+        list-style-type:none;
+        
+      }
 
       #hide-related section{
         display:none!important;
@@ -22,6 +25,8 @@
         border-top: none;
         padding: 0.75em
       }
+
+      /* Product Category Menu */
 
       #menu-product-categories{
         list-style-type: none;
