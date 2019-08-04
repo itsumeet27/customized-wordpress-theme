@@ -11,6 +11,10 @@
 
       /* Product Category Menu */
 
+      #hide-related section{
+        display:none!important;
+      }
+
       .qty{
         border: 1px solid #333;
         border-left: none;

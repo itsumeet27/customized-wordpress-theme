@@ -17,6 +17,8 @@
 
 defined( 'ABSPATH' ) || exit;
 
+global $product;
+
 /**
  * Hook: woocommerce_before_single_product.
  *
@@ -29,7 +31,7 @@ if ( post_password_required() ) {
   return;
 }
 ?>
-<div class="product">
+<div class="">
     <!-- Intro -->
     <div class="card card-intro blue-gradient mb-4">
 
@@ -102,6 +104,18 @@ if ( post_password_required() ) {
             <!--Grid column-->
         </div>
         <!--Grid row-->
+        <div class="row" id="hide-related">
+            <?php
+                /**
+                 * Hook: woocommerce_after_single_product_summary.
+                 *
+                 * @hooked woocommerce_output_product_data_tabs - 10
+                 * @hooked woocommerce_upsell_display - 15
+                 * @hooked woocommerce_output_related_products - 20
+                 */
+                do_action( 'woocommerce_after_single_product_summary' );
+            ?>
+        </div>
     </div>
     <!--Container  -->
 </div>
