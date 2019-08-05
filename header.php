@@ -16,6 +16,7 @@
       .woocommerce-product-details__short-description h5{
         font-size: 24px;
         font-weight: 400;
+        margin-bottom: 1.5em;
       }
 
       .woocommerce-tabs ul{

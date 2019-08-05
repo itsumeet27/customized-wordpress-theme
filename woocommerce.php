@@ -122,7 +122,7 @@ if ( !is_shop()) {
                         <!--Content-->
                         <h6 class="mb-3">
                             <a href="<?php echo esc_url( get_term_link( $product_cat_id, 'product_cat' ) ); ?>">
-                                <span class="badge purple mr-1"><?php echo $product_cat_name; ?></span>
+                                <span class="badge purple mr-1" style="padding:0.5em 0.75em;text-transform:uppercase"><?php echo $product_cat_name; ?></span>
                             </a>
                         </h6>
                         <h5 class="mb-3">
