@@ -9,6 +9,14 @@
     <?php wp_head(); ?>
     <style type="text/css">
 
+      .woocommerce-product-details__short-description p{
+        font-size: 18px;
+      }
+
+      .woocommerce-product-details__short-description h5{
+        font-size: 24px;
+        font-weight: 400;
+      }
 
       .woocommerce-tabs ul{
         list-style-type:none;
