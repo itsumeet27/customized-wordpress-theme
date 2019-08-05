@@ -26,15 +26,15 @@ global $product;
 
   <?php do_action( 'woocommerce_product_meta_start' ); ?>
 
-  <?php if (false) : // wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
+  <?php if (true) : // wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
 
-    <span class="sku_wrapper"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
+    <span class="sku_wrapper" style="font-size: 18px;font-weight:400;margin-bottom:2em;"><?php esc_html_e( 'SKU:', 'woocommerce' ); ?> <span class="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
 
   <?php endif; ?>
   <div class="mb-3">
-  <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="badge purple white-text mr-1">' . _n( '', '', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+  <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="badge purple white-text mr-1" style="text-transform: uppercase;font-size: 14px;margin-top:1.25em;padding: 0.65em 1em">' . _n( '', '', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
   </div>
-  <?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+  <?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as" style="font-weight:400;">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
 
   <?php do_action( 'woocommerce_product_meta_end' ); ?>
 
