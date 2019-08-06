@@ -128,11 +128,11 @@ if ( !is_shop()) {
                         <h5 class="mb-3">
                             <strong><?php the_title() ?></strong>
                         </h5>
-                        <p>
+                        <p><b>
                             <?php if($sale_price) {
                             ?>
                             <span class="mr-1">
-                                <del><?php echo "₹ " . $regular_price; ?></del>
+                                <del class="text-danger"><?php echo "₹ " . $regular_price; ?></del>
                             </span>
                             <?php
                             }
@@ -142,11 +142,11 @@ if ( !is_shop()) {
                         echo "₹ ";
                         echo  ($sale_price) ? $sale_price : $regular_price;
                         ?></span>
-                        </p>
+                        </b></p>
                         <a href="<?php echo get_permalink(wc_get_page_id( 'cart' ))  . "?add-to-cart=" .  get_the_ID() ; ?> " class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="left" title="Add to cart">
                             <i class="fas fa-shopping-cart"></i>
                         </a>
-                        <a href="<?php echo get_permalink() ?>" class="btn btn-info btn-sm">Details</a>
+                        <a href="<?php echo get_permalink() ?>" class="btn btn-info btn-sm" title="Product Details">Details</a>
 
                     </div>
                     <!-- Product Card naked -->
