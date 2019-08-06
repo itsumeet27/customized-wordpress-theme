@@ -84,7 +84,7 @@ if ( !is_shop()) {
                 // Define custom query parameters
                 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                 $args = array(
-                    'post_type' => 'product',
+                    'post_type'      => 'product',
                     'posts_per_page' => 18,
                     'paged'          => $paged
                     );
