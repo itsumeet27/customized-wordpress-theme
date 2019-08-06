@@ -17,16 +17,19 @@
 
 defined( 'ABSPATH' ) || exit;
 
-global $product;
+global $product, $woocommerce_loop;
 
 // Ensure visibility.
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php wc_product_class( '', $product ); ?>>
+
+<div <?php post_class('col-lg-3 col-md-3 col-sm-6 col-xs-12'); ?>>
+
 	<?php
 	/**
+	 * <li <?php wc_product_class( '', $product ); ?>> To be replaced if required in place of div above
 	 * Hook: woocommerce_before_shop_loop_item.
 	 *
 	 * @hooked woocommerce_template_loop_product_link_open - 10
@@ -64,4 +67,5 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
-</li>
+</div>
+<?php if($woocommerce_loop['loop'] % 4 === 0) {  echo '</div><div class="row">';} ?>
