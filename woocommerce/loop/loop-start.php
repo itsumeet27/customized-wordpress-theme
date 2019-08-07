@@ -13,12 +13,13 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @package 	WooCommerce/Templates
  * @version     3.3.0
+ * <!-- <ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>"> -->
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<!-- <ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>"> -->
-<div class="products">
+
+<div class="products container-fluid text-center">
 	<div class="row">

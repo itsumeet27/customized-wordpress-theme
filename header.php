@@ -9,6 +9,17 @@
     <?php wp_head(); ?>
     <style type="text/css">
 
+      .products .row{
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
+
+      h1.page-title{
+        margin-top:2em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
       .woocommerce-product-details__short-description p{
         font-size: 18px;
       }
