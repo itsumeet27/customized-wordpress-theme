@@ -20,6 +20,11 @@
         text-transform: uppercase;
       }
 
+      .woocommerce-loop-product__title{
+        padding-top: 1.2em;
+        padding-bottom: 0.8em
+      }
+
       .woocommerce-product-details__short-description p{
         font-size: 18px;
       }
