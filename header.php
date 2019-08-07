@@ -22,7 +22,26 @@
 
       .woocommerce-loop-product__title{
         padding-top: 1.2em;
-        padding-bottom: 0.8em
+        padding-bottom: 0.8em;
+      }
+
+      .add_to_cart_button{
+        padding: 0.5rem 1.6rem;
+        font-size:  0.64rem;
+        background: #33b5e5!important;
+        color:#fff;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+        margin: 0.375rem;
+        border-radius: 0.125rem;
+        text-transform:uppercase;
+        white-space: normal;
+        text-align: center;
+        vertical-align:middle;
+      }
+
+      .add_to_cart_button:hover{
+        color:#fff;
       }
 
       .woocommerce-product-details__short-description p{
