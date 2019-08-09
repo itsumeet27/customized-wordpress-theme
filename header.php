@@ -9,6 +9,18 @@
     <?php wp_head(); ?>
     <style type="text/css">
 
+      .woocommerce-result-count, .orderby{
+        margin-left: 2.5em;
+      }
+
+      .orderby{
+        border: 1px solid #333;
+        border-left:0;
+        border-right:0;
+        border-top:0;
+        padding: 0.5em 0.75em;
+      }
+
       .price .woocommerce-Price-amount{
         color: #fff;
         background-color: #114A7C;
