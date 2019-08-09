@@ -9,6 +9,16 @@
     <?php wp_head(); ?>
     <style type="text/css">
 
+      .price .woocommerce-Price-amount{
+        color: #fff;
+        background-color: #114A7C;
+        border-radius: 50px;
+        padding: 0.25em 0.7em;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+        margin: 0.75rem;
+      }
+
       .products .row{
         margin-top: 1.5em;
         margin-bottom: 1.5em;
