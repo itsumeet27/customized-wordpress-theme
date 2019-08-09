@@ -9,6 +9,14 @@
     <?php wp_head(); ?>
     <style type="text/css">
 
+      .cat-products{
+        margin: 1.5em;
+        padding: 1.5em;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+      }
+
       .woocommerce-result-count, .orderby{
         margin-left: 2.5em;
       }

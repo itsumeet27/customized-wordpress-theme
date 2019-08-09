@@ -25,7 +25,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 
-<div <?php post_class('col-lg-3 col-md-3 col-sm-6 col-xs-12'); ?>>
+<div <?php post_class('col-md-4 col-sm-6 cat-products'); ?>>
 
 	<?php
 	/**
